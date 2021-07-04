@@ -10,9 +10,9 @@ class LinearSearchTestCase(unittest.TestCase):
         its correct index.
         """
         list = [3, 8, 2, 5, 9, 1, 4]
-        element = [9]
+        element = 9
         index = linear_search(list, element)
-        self.assertEqual(5, index)
+        self.assertEqual(4, index)
 
 
 if __name__ == '__main__':

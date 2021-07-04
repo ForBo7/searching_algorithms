@@ -1,6 +1,9 @@
-def linear_search(list, element):
+def linear_search(list, required_element):
     """
     Performs a linear search to find the required element in the provided list
-    and return its index.
+    and return its index. Returns None if not found.
     """
-    pass
+    for element in list:
+        if element == required_element:
+            return list.index(required_element)
+    return None
